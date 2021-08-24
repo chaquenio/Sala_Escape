@@ -1,0 +1,12 @@
+------MEJORAS------
+Animaciones botones :active
+favicon
+:selected en todos los text
+imagenes con animaciones
+cambiar icono
+pista 1
+
+
+
+-----SALA------
+Se puede hacer una sala que tenga un especie de cuestionario en un slider

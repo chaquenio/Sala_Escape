@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Iniciar juego - Estacion Música";
+}
+
+<div class="container">
+    <h1 class="text-center iniciarjuego__title my-5">Tutorial<span class="iniciarjuego__title--span"></span></h1>
+    <div class="mb-3 mt-5 iniciarjuego__text">
+        <p class="text-center"><span class="iniciarjuego__text--red mx-1">HABRÁ</span>cuatro salas de las cuales solo
+            podras escapar ingresando el <span class="iniciarjuego__text--red mx-1">CÓDIGO</span>.</p>
+        <p class="text-center">Los codigos los encotraras solamente en el mismo<span
+                class="iniciarjuego__text--red mx-1">SITIO.</span>Tendras que usar el<span
+                class="iniciarjuego__text--red mx-1">INGENIO</span> para descubrirlos.</p>
+        <p class="text-center">Presta <span class="iniciarjuego__text--red mx-1">ATENCION</span> porque el codigo puede
+            estar, donde menos lo esperes.</p>
+    </div>
+
+    <img class="iniciarjuegoImg my-5 mx-auto" src="~/img/lampara.jpg" alt="">
+
+    <div class="row my-5">
+        <div class="col-12  text-center my-md-0 my-1">
+            <a asp-controller="Escape" asp-action="index" class="iniciarjuegobutton__juego btn mx-auto ">Jugar</a>
+        </div>
+    </div>
+</div>

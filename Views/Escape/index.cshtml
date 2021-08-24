@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Iniciar juego - Estacion Música";
+}
+
+<div class="container">
+    <h1 class="text-center iniciarjuego__title my-5">BIENVENIDO A <span class="iniciarjuego__title--span">MUSIC
+            SCAPE</span></h1>
+    <div class="mb-3 mt-5 iniciarjuego__text">
+        <p class="text-center"><span class="iniciarjuego__text--red mx-1">MUSIC SCAPE</span> es una sala de escape para
+            apasionados a la música, más en concreto, al que le gusta el <span
+                class="iniciarjuego__text--red mx-1">ROCK</span>.</p>
+        <p class="text-center">En esta sala de escape deberás usar tu <span
+                class="iniciarjuego__text--red mx-1">EXPERIENCIA</span> en música y tu capacidad de búsqueda para
+            encontrar las <span class="iniciarjuego__text--red mx-1">PISTAS</span> que están en las habitaciones.</p>
+        <p class="text-center">El juego cuenta con <span class="iniciarjuego__text--red mx-1">CUATRO HABITACIONES</span>
+            de las cuales sólo puedes avanzar encontrando la pista.</p>
+    </div>
+
+    <img class="iniciarjuegoImg my-5 mx-auto" src="~/img/trabajoEnEquipo.jpg" alt="">
+
+    <div class="row my-5">
+        <div class="col-12 col-md-6 text-center my-md-0 my-1">
+            <a asp-controller="Home" asp-action="Tutorial" class="iniciarjuegobutton__tutorial btn ">Tutorial</a>
+        </div>
+        <div class="col-12 col-md-6 text-center my-md-0 my-1">
+            <a asp-controller="Escape" asp-action="habitacion1"
+                class="iniciarjuegobutton__juego btn mx-auto ">Empezar</a>
+        </div>
+    </div>
+</div>

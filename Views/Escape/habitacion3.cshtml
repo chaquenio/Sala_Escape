@@ -1,0 +1,59 @@
+@{
+    ViewData["Title"] = "Habitacion 3 - Estacion Música";
+}
+
+
+<div class="container">
+    <h1 class="text-center iniciarjuego__title my-5">Habitacion 3 <span
+            class="iniciarjuego__title--habitacion1">N.W.A.</span></h1>
+
+    <div class="mb-3 mt-5 iniciarjuego__text">
+        <p class="text-center"><span class="pista1"></span>N.W.A. fue un grupo estadounidense<span
+                class="pista1"></span>de Hip Hop de Compton, California.<span class="pista1"></span> Es considerado como
+            el grupo pionero en la formacion del subgenero<span class="pista1">i</span>musical gangsta rap.</p>
+        <p class="text-center">Los miembros originales<span class="pista1"> del grupo eran </span>DJ Yella, Dr. Dre,
+            <span class="pista1">Eazy-E, Ice Cube,</span> MC Ren y Arabian Prince.<span class="pista1">Su álbum
+                debut</span> Straight Outta Compton<span class="pista1"></span> marcó el comienzo de la nueva era del
+            gangsta rap, ya que tanto su producción como su temática social en las letras eran revolucionarios dentro
+            del género.<span class="pista1"></span></p>
+        <p class="text-center">el grupo reflejaba la creciente rabia de la juventud urbana. La canción con la que abre
+            el disco, "Straight Outta Compton", presentaba al grupo, "Fuck tha Police" protestaba contra la brutalidad
+            policial y la discriminación racial<span class="pista1"></span><span class="pista1"></span></p>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-12">
+            <img data-toggle="tooltip" data-placement="top" title="Straight" class="img-nwa" src="~/img/nwa1.jpg"
+                alt="">
+        </div>
+        <div class="col-md-4 col-12">
+            <img data-toggle="tooltip" data-placement="top" title="Outta" class="img-nwa" src="~/img/nwa2.jpg" alt="">
+        </div>
+        <div class="col-md-4 col-12">
+            <img data-toggle="tooltip" data-placement="top" title="Compton" class="img-nwa" src="~/img/nwa3.jpg">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center iniciarjuego__title my-5">¿Cual es el nombre de la cancion?<span
+                    class="iniciarjuego__title--habitacion1"></span></h4>
+        </div>
+    </div>
+    <div class="respuesta1 mt-3 mb-2" id="respuesta1">
+        <button class="closeRespuestaButton " id="close1"><i class="bi bi-x-lg"></i></button>
+        <p class="text-center">Es una cancion de 1988</p>
+    </div>
+
+    <div class="respuesta1 my-2" id="respuesta2">
+        <button class="closeRespuestaButton " id="close2"><i class="bi bi-x-lg"></i></button>
+        <p class="text-center">Te la dejo picando: tootltip</p>
+    </div>
+
+    <form method="post" action='@Url.Action("habitacion3","Escape")'>
+        <input class="form-control introduciPista mx-auto mt-5" type="text" name="Respuesta" placeholder="Respuesta">
+        <div class="d-flex row justify-content-center mb-5 mt-2">
+            <button type="button" class="iniciarjuegobutton__tutorial btnreset mx-3 my-3" id="pista1">Pista 1</button>
+            <button type="submit" class="iniciarjuegobutton__juego btnreset mx-3 my-3">Enviar</button>
+            <button type="button" class="iniciarjuegobutton__tutorial btnreset mx-3 my-3" id="pista2">Pista 2</button>
+        </div>
+    </form>
+</div>

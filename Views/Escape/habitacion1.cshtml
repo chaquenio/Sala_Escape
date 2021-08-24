@@ -1,0 +1,60 @@
+@{
+    ViewData["Title"] = "Habitacion 1 - Estacion Música";
+}
+
+
+<div class="container">
+    <h1 class="text-center iniciarjuego__title my-5">Habitacion 1 <span class="iniciarjuego__title--habitacion1">Red Hot
+            Chili Pepers</span></h1>
+
+    <div class="mb-3 mt-5 iniciarjuego__text">
+        <p class="text-center">Re<span class="pista1">d</span> Hot Chili Peppers es una banda de rock est<span
+                class="pista1">a</span>dounidense formada en 1983 en Los Ángeles, California. Sus integrantes son, el
+            vocalista Anthony Kiedis, el guitarrista Joh<span class="pista1">n</span> Frusciante, el bajista Flea y el
+            bater<span class="pista1">i</span>sta Chad Smith.</p>
+        <p class="text-center">El estilo musical de la banda fusiona<span class="pista1"> </span>el funk tradicional con
+            el ro<span class="pista1">c</span>k y el rock <span class="pista1">a</span>lternativo incluyendo elementos
+            de otros géneros como e<span class="pista1">l</span> rap, pop rock, heavy metal, dance, punk, h<span
+                class="pista1">i</span>p hop e indie rock.</p>
+        <p class="text-center">Entre los mejores albums de los Red Hot Chili Peppers podemos encontrar Mother's Milk,
+            Blood Sugar Sex Magik, Cali<span class="pista1">forni</span>cation, By the Way y Stadium <span
+                class="pista1">A</span>rcadium</p>
+    </div>
+    <img src="~/img/Logo-Red-Hot-Chili-Peppers.png" class="img-redhot" alt="">
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center iniciarjuego__title my-5">¿Cual es el Nombre de la cancion?<span
+                    class="iniciarjuego__title--habitacion1"></span></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="respuesta1 mt-3 mb-2" id="respuesta1">
+                <button class="closeRespuestaButton " id="close1"><i class="bi bi-x-lg"></i></button>
+                <p class="text-center">Es una cancion del album Stadium Arcadium</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="respuesta1 my-2" id="respuesta2">
+        <button class="closeRespuestaButton " id="close2"><i class="bi bi-x-lg"></i></button>
+        <p class="text-center">Te la dejo picando ::selection</p>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-12">
+            <form method="post" action='@Url.Action("habitacion1","Escape")'>
+                <input class="form-control introduciPista mx-auto mt-5" type="text" name="Respuesta"
+                    placeholder="Respuesta">
+                <div class="d-flex row justify-content-center mb-5 mt-2">
+
+                    <button type="button" class="iniciarjuegobutton__tutorial btnreset mx-3 my-3 boton" id="pista1">Pista
+                        1</button>
+                    <button type="submit" class="iniciarjuegobutton__juego btnreset mx-3 my-3 boton">Enviar</button>
+                    <button type="button" class="iniciarjuegobutton__tutorial btnreset mx-3 my-3 boton" id="pista2">Pista
+                        2</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

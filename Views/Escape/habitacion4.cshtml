@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Habitacion 4 - Estacion Música";
+}
+
+
+<div class="container">
+    <h1 class="text-center iniciarjuego__title my-5">Habitacion 4<span class="iniciarjuego__title--habitacion1">Kurt
+            Cobain</span></h1>
+
+    <div class="mb-3 mt-5 iniciarjuego__text">
+        <p class="text-center"><span class="pista1"></span>Kurt Donald Cobain<span class="pista1"></span> más conocido
+            como Kurt Cobain, fue un <span class="pista1"></span>músico y compositor estadounidense, conocido por haber
+            sido el cantante, guitarrista y principal compositor de la banda Nirvana.<span class="pista1"></span></p>
+        <p class="text-center"><span class="pista1"></span><span class="pista1">Cobain formó Nirvana con Krist Novoselic
+                en su ciudad natal en 1985 y la estableció como parte de la escena musical de Seattle, con su álbum
+                Bleach lanzado por el sello discográfico independiente Sub Pop en 1989.</span><span
+                class="pista1"></span><span class="pista1"></span><span class="pista1"></span></p>
+        <p class="text-center">Durante los últimos años de su vida, Cobain luchó con depresión, enfermedad y adicción a
+            la heroína. También tenía dificultad para sobrellevar su fama e imagen pública, las presiones profesionales
+            y personales en su vida y de su esposa, la cantautora Courtney Love.<span class="pista1"></span><span
+                class="pista1"></span></p>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-12">
+            <img class="img-nwa mt-5" src="~/img/cobain1.jpg" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+            <img class="img-nwa mt-5" src="~/img/cobain2.jpg" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+            <img class="img-nwa mt-5" src="~/img/cobain3.jpg" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+            <img class="img-nwa mt-5" src="~/img/cobain4.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center iniciarjuego__title my-5">¿En que Año murió Kurt Cobain?<span
+                    class="iniciarjuego__title--habitacion1"></span></h4>
+        </div>
+    </div>
+
+    <div class="respuesta1 mt-3 mb-2" id="respuesta1">
+        <button class="closeRespuestaButton " id="close1"><i class="bi bi-x-lg"></i></button>
+        <p class="text-center">Es alrededor del los 90s</p>
+    </div>
+
+    <div class="respuesta1 my-2" id="respuesta2">
+        <button class="closeRespuestaButton " id="close2"><i class="bi bi-x-lg"></i></button>
+        <p class="text-center">Te la dejo picando es una año entre el 93 y 95</p>
+    </div>
+
+    <form method="post" action='@Url.Action("habitacion4","Escape")'>
+        <input class="form-control introduciPista mx-auto mt-5" type="text" name="Respuesta" placeholder="Respuesta">
+        <div class="d-flex row justify-content-center mb-5 mt-2">
+            <button type="button" class="iniciarjuegobutton__tutorial btnreset mx-3 my-3" id="pista1">Pista 1</button>
+            <button type="submit" class="iniciarjuegobutton__juego btnreset mx-3 my-3">Enviar</button>
+            <button type="button" class="iniciarjuegobutton__tutorial btnreset mx-3 my-3" id="pista2">Pista 2</button>
+        </div>
+    </form>
+</div>

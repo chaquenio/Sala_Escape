@@ -1,0 +1,78 @@
+@{
+    ViewData["Title"] = "Habitacion 2 - Estacion Música";
+}
+
+<div class="container">
+    <h1 class="text-center iniciarjuego__title my-5">Habitacion 2 <span class="iniciarjuego__title--habitacion1">Guns N'
+            Roses</span></h1>
+
+    <div class="imagenesHabitacion2 mx-auto">
+        <div class="row">
+            <div class="col-12 col-md-4 p-0 habitacion2ImgBox">
+                <img class="w-100" src="~/img/guns1.jpg" alt="" srcset="">
+                <div class="palabraOculta">
+                    <p>TY</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 p-0 habitacion2ImgBox">
+                <img class="w-100" src="~/img/guns2.jpg" alt="" srcset="">
+                <div class="palabraOculta">
+                    <p>SE</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 p-0 habitacion2ImgBox">
+                <img class="w-100" src="~/img/guns3.jpg" alt="" srcset="">
+                <div class="palabraOculta">
+                    <p>PA</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-0 habitacion2ImgBox">
+                <img class="w-100" src="~/img/guns4.jpg" alt="" srcset="">
+                <div class="palabraOculta">
+                    <p>RA</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-0 habitacion2ImgBox">
+                <img class="w-100" src="~/img/guns5.jpg" alt="" srcset="">
+                <div class="palabraOculta">
+                    <p>CI</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-0 habitacion2ImgBox">
+                <img class="w-100" src="~/img/guns6.jpg" alt="" srcset="">
+                <div class="palabraOculta">
+                    <p>DI</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center iniciarjuego__title my-5">¿Cual es el nombre de la canción?<span
+                    class="iniciarjuego__title--habitacion1"></span></h4>
+        </div>
+    </div>
+    <div class="respuesta1 mt-3 mb-2" id="respuesta1">
+        <button class="closeRespuestaButton " id="close1"><i class="bi bi-x-lg"></i></button>
+        <p class="text-center">Es una cancion del Appetite For Destruction</p>
+    </div>
+
+    <div class="respuesta1 my-2" id="respuesta2">
+        <button class="closeRespuestaButton " id="close2"><i class="bi bi-x-lg"></i></button>
+        <p class="text-center">Te la dejo picando ::active</p>
+    </div>
+
+    <form method="post" action='@Url.Action("habitacion2", "Escape")'>
+        <input class="form-control introduciPista mx-auto mt-5" type="text" name="Respuesta" placeholder="Respuesta">
+        <div class="d-flex row justify-content-center mb-5 mt-2">
+            <button type="button" class="iniciarjuegobutton__tutorial btnreset mx-3 my-3" id="pista1">Pista 1</button>
+            <button type="submit" class="iniciarjuegobutton__juego btnreset mx-3 my-3">Enviar</button>
+            <button type="button" class="iniciarjuegobutton__tutorial btnreset mx-3 my-3" id="pista2">Pista 2</button>
+        </div>
+    </form>
+</div>
